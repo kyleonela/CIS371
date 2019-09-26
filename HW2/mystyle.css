@@ -1,0 +1,39 @@
+.domestic{
+    color:blue;
+}
+
+.international{
+    font-style:italic;
+}
+
+.heavy{
+    color: hsla(242, 50%, 50%, 1);
+}
+
+.light{
+    color: hsla(240, 70%, 70%, 1);
+}
+
+.grid-heading{
+    display:grid;
+    /* grid-template-rows:auto auto; */
+    grid-template-columns: auto auto;
+    border:1px black solid;
+}
+
+.grid-rows {
+    border-bottom: 1px black solid;
+}
+
+.grid-rows2{
+    border-bottom: 1px black solid;
+}
+
+.mytable tr:nth-child(even){
+    background-color: grey;
+}
+
+.toprow{
+    border-bottom: 1px black solid;
+    font-weight:bold;
+}
