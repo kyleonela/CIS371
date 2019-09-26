@@ -1,0 +1,94 @@
+head + body{
+  color:black;
+  font-family: Times;
+}
+.my-picture {
+  margin: 20px 20px 20px 20px;
+  widows: 150px;
+  height: 150px;
+  float: right;
+}
+#courseTable{
+  padding:15px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid > div {
+  background-color: rgba(83, 124, 185, 0.233);
+}
+
+.three-things{
+  padding:5px;
+}
+
+.favorite-things {
+  padding:5px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.inspiration {
+  padding:5px;
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+.courses {
+  padding:5px;
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+
+.websites {
+  padding:5px;
+  grid-column: 1/2;
+  grid-row: 3/3;
+}
+
+.quotes {
+  padding:5px;
+  grid-column: 1/4;
+  grid-row: 4/4;
+}
+
+.best{
+  font-style:italic;
+}
+
+table,
+th,
+td {
+  border: 0.5px solid gray;
+}
+
+tr:nth-child(2), tr:nth-child(4){
+  text-align:center;
+}
+
+tr:nth-child(even){
+  background-color:white;
+}
+
+.jackie-chan {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:200px;
+    height:150px;
+}
+.jctext{
+    text-align:center;
+    padding:5px;
+    display:block;
+}
+
+@media (max-width: 600px){
+  .grid{
+    grid-template-columns: auto auto auto;
+  }
+}
